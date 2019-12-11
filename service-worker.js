@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/prismagram-frontend/precache-manifest.ff4eea2df693d5257c68ffe1b18da215.js"
+  "/prismagram-frontend/precache-manifest.63086b8fed81d9d24e6852da6d21da85.js"
 );
 
 self.addEventListener('message', (event) => {
