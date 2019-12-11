@@ -13,8 +13,8 @@ install:
   - npm install -g yarn
 
 before_script:
-  - git config --global user.name $USER_PASSWORD
-  - git config --global user.password $USER_NAME
+  - git config --global user.name $USER_NAME
+  - git config --global user.password $USER_PASSWORD
 
 script:
   - yarn run build
