@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "gh-pages-clean",
-    "deploy": "gh-pages -d build   -r \"https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}\""
+    "deploy": "gh-pages -d build   -r \"https://${USER_NAME}:${USER_PASSWORD}@github.com/${TRAVIS_REPO_SLUG}\""
   },
   "eslintConfig": {
     "extends": "react-app"
