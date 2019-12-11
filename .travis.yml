@@ -17,6 +17,8 @@ before_script:
   - git config --global user.password $USER_PASSWORD
 
 script:
+  - git submodule init
+  - git submodule update
   - yarn run build
   - yarn run deploy
 
