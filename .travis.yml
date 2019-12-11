@@ -15,9 +15,15 @@ before_script:
   - git config --global user.password $USER_PASSWORD
 
 script:
+  - git submodule init
+  - git submodule update
   - yarn run build
   - yarn run deploy
 
-  deploy:
-    provider: pages:git
-    deploy_key: $GITHUB_TOKEN
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
