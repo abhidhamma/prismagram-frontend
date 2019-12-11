@@ -19,9 +19,5 @@ script:
   - yarn run deploy
 
   deploy:
-    provider: pages
-    skip_cleanup: true
-    github_token: $GITHUB_TOKEN
-    keep_history: true
-    on:
-      branch: master
+    provider: pages:git
+    deploy_key: $GITHUB_TOKEN
