@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5161fc4b7f69fc1070effba601d80941",
+    "revision": "11022c8f0486d77401cf38423d7424e1",
     "url": "/prismagram-frontend/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/prismagram-frontend/static/js/2.7a895033.chunk.js.LICENSE"
   },
   {
-    "revision": "88d90064c262907fadd0",
-    "url": "/prismagram-frontend/static/js/main.dc8a544f.chunk.js"
+    "revision": "4777b26ba51809be29bb",
+    "url": "/prismagram-frontend/static/js/main.77c32b1a.chunk.js"
   },
   {
     "revision": "b142358c70fe38de9fa4",

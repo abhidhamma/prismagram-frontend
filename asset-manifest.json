@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/prismagram-frontend/static/js/main.dc8a544f.chunk.js",
-    "main.js.map": "/prismagram-frontend/static/js/main.dc8a544f.chunk.js.map",
+    "main.js": "/prismagram-frontend/static/js/main.77c32b1a.chunk.js",
+    "main.js.map": "/prismagram-frontend/static/js/main.77c32b1a.chunk.js.map",
     "runtime-main.js": "/prismagram-frontend/static/js/runtime-main.8169af77.js",
     "runtime-main.js.map": "/prismagram-frontend/static/js/runtime-main.8169af77.js.map",
     "static/css/2.5dbdccff.chunk.css": "/prismagram-frontend/static/css/2.5dbdccff.chunk.css",
     "static/js/2.7a895033.chunk.js": "/prismagram-frontend/static/js/2.7a895033.chunk.js",
     "static/js/2.7a895033.chunk.js.map": "/prismagram-frontend/static/js/2.7a895033.chunk.js.map",
     "index.html": "/prismagram-frontend/index.html",
-    "precache-manifest.075eaccebe99da43db07ecfee1800f11.js": "/prismagram-frontend/precache-manifest.075eaccebe99da43db07ecfee1800f11.js",
+    "precache-manifest.d4ea32d47c658ca58a3e101f13683a2b.js": "/prismagram-frontend/precache-manifest.d4ea32d47c658ca58a3e101f13683a2b.js",
     "service-worker.js": "/prismagram-frontend/service-worker.js",
     "static/css/2.5dbdccff.chunk.css.map": "/prismagram-frontend/static/css/2.5dbdccff.chunk.css.map",
     "static/js/2.7a895033.chunk.js.LICENSE": "/prismagram-frontend/static/js/2.7a895033.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8169af77.js",
     "static/css/2.5dbdccff.chunk.css",
     "static/js/2.7a895033.chunk.js",
-    "static/js/main.dc8a544f.chunk.js"
+    "static/js/main.77c32b1a.chunk.js"
   ]
 }
