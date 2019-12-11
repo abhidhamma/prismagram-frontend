@@ -1,0 +1,24 @@
+language: node.js
+node_js:
+  - 'node'
+
+sudo: required
+
+services:
+  - docker
+
+install:
+  - npm install
+  - npm i yarn -g
+  - yarn add antd@4.0.0-alpha.0
+
+script:
+  - npm run build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
