@@ -1,4 +1,5 @@
-language: node.js
+language: node_js
+
 node_js:
   - 'node'
 
@@ -9,12 +10,19 @@ services:
 
 install:
   - npm install
+  - npm install -g yarn
+
+before_script:
+  - git config --global user.name $USER_PASSWORD
+  - git config --global user.password $USER_NAME
 
 script:
-  - npm run build
-  - npm run deploy
+  - yarn run build
+  - yarn run deploy
 
 deploy:
   provider: pages:git
   token: $GITHUB_TOKEN
+  cleanup: true
+  keep_history: false
   edge: true
