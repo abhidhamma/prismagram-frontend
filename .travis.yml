@@ -11,13 +11,18 @@ install:
   - npm install -g yarn
 
 before_script:
+  - git submodule init
+  - git submodule update
   - git config --global user.name $USER_NAME
   - git config --global user.password $USER_PASSWORD
 
 script:
   - yarn run build
-  - yarn run deploy
 
-  deploy:
-    provider: pages:git
-    deploy_key: $GITHUB_TOKEN
+deploy:
+  provider: pages
+  cleanup: true
+  token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
