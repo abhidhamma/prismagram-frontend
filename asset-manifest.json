@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "abhidhamma.github.io/prismagram-frontend/static/js/main.8a9f5173.chunk.js",
+    "main.js.map": "abhidhamma.github.io/prismagram-frontend/static/js/main.8a9f5173.chunk.js.map",
+    "runtime-main.js": "abhidhamma.github.io/prismagram-frontend/static/js/runtime-main.4ae20ab9.js",
+    "runtime-main.js.map": "abhidhamma.github.io/prismagram-frontend/static/js/runtime-main.4ae20ab9.js.map",
+    "static/css/2.5dbdccff.chunk.css": "abhidhamma.github.io/prismagram-frontend/static/css/2.5dbdccff.chunk.css",
+    "static/js/2.e8d4ac71.chunk.js": "abhidhamma.github.io/prismagram-frontend/static/js/2.e8d4ac71.chunk.js",
+    "static/js/2.e8d4ac71.chunk.js.map": "abhidhamma.github.io/prismagram-frontend/static/js/2.e8d4ac71.chunk.js.map",
+    "index.html": "abhidhamma.github.io/prismagram-frontend/index.html",
+    "precache-manifest.ad31ce739e21a1a8d33e1dd299a3c49c.js": "abhidhamma.github.io/prismagram-frontend/precache-manifest.ad31ce739e21a1a8d33e1dd299a3c49c.js",
+    "service-worker.js": "abhidhamma.github.io/prismagram-frontend/service-worker.js",
+    "static/css/2.5dbdccff.chunk.css.map": "abhidhamma.github.io/prismagram-frontend/static/css/2.5dbdccff.chunk.css.map",
+    "static/js/2.e8d4ac71.chunk.js.LICENSE": "abhidhamma.github.io/prismagram-frontend/static/js/2.e8d4ac71.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4ae20ab9.js",
+    "static/css/2.5dbdccff.chunk.css",
+    "static/js/2.e8d4ac71.chunk.js",
+    "static/js/main.8a9f5173.chunk.js"
+  ]
+}
