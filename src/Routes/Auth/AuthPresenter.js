@@ -61,7 +61,7 @@ export default ({
       {action === 'logIn' && (
         <form onSubmit={onSubmit}>
           <Input placeholder={'Email'} {...email} type="email" />
-          <Button text={'Log in'} />
+          <Button text={'로그인가즈아!!'} />
         </form>
       )}
       {action === 'signUp' && (
