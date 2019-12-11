@@ -11,7 +11,7 @@ install:
   - npm install
 
 script:
-  - npm run build
+  - npm run deploy
 
 deploy:
   provider: pages:git
