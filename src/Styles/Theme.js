@@ -15,4 +15,14 @@ export default {
              border-radius:${BORDER_RADIUS};
              background-color:white;
             `,
+  primaryColor: '#65676B',
+  primaryColorInverted: '#ff9d76',
+  ActiveColor: '#1877F2',
+
+  INDIGO: '#3f51b5',
+  DEEPORANGE: '#3f51b5',
+  AMBER: '#3f51b5',
+  PURPLE: '#3f51b5',
+  BLUE: '#3f51b5',
+  TEAL: '#3f51b5',
 };

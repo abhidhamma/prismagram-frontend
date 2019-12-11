@@ -7,7 +7,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import GlobalStyles from '../Styles/GlobalStyles';
 import Theme from '../Styles/Theme';
 import Router from './Router';
-import Footer from './Footer';
 
 const QUERY = gql`
   {
@@ -18,7 +17,8 @@ const QUERY = gql`
 const Wrapper = styled.div`
   margin: 0 auto;
   max-width: 935px;
-  width: 100%;
+  width: 100vw;
+  display: grid;
 `;
 
 export default () => {
@@ -30,7 +30,7 @@ export default () => {
       <Wrapper>
         <GlobalStyles />
         <Router isLoggedIn={isLoggedIn} />
-        <Footer />
+
         <ToastContainer position={toast.POSITION.BOTTOM_LEFT} />
       </Wrapper>
     </ThemeProvider>
