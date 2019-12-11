@@ -48,7 +48,7 @@ const Form = styled(Box)`
 
 export default ({
   action,
-  username,
+  userName,
   firstName,
   lastName,
   email,
@@ -61,7 +61,7 @@ export default ({
       {action === 'logIn' && (
         <form onSubmit={onSubmit}>
           <Input placeholder={'Email'} {...email} type="email" />
-          <Button text={'로그인가즈아!!!@!'} />
+          <Button text={'Log in'} />
         </form>
       )}
       {action === 'signUp' && (
@@ -69,7 +69,7 @@ export default ({
           <Input placeholder={'First name'} {...firstName} />
           <Input placeholder={'Last name'} {...lastName} />
           <Input placeholder={'Email'} {...email} type="email" />
-          <Input placeholder={'Username'} {...username} />
+          <Input placeholder={'userName'} {...userName} />
           <Button text={'Sign up'} />
         </form>
       )}
@@ -80,18 +80,21 @@ export default ({
         </form>
       )}
     </Form>
-    <StateChanger>
-      {action === 'logIn' ? (
-        <>
-          Don't have an account?{' '}
-          <Link onClick={() => setAction('signUp')}>Sign up</Link>
-        </>
-      ) : (
-        <>
-          Have an account?{' '}
-          <Link onClick={() => setAction('logIn')}>Log in</Link>
-        </>
-      )}
-    </StateChanger>
+
+    {action !== 'confirm' && (
+      <StateChanger>
+        {action === 'logIn' ? (
+          <>
+            Don't have an account?{' '}
+            <Link onClick={() => setAction('signUp')}>Sign up</Link>
+          </>
+        ) : (
+          <>
+            Have an account?{' '}
+            <Link onClick={() => setAction('logIn')}>Log in</Link>
+          </>
+        )}
+      </StateChanger>
+    )}
   </Wrapper>
 );
