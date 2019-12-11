@@ -9,8 +9,6 @@ services:
 
 install:
   - npm install
-  - npm i yarn -g
-  - yarn add antd@4.0.0-alpha.0
 
 script:
   - npm run build
