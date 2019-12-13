@@ -1,6 +1,5 @@
 const BOX_BORDER = '1px solid #e6e6e6';
 const BORDER_RADIUS = '4px';
-
 export default {
   bgColor: '#FAFAFA',
   blackColor: '#262626',
@@ -25,4 +24,7 @@ export default {
   PURPLE: '#3f51b5',
   BLUE: '#3f51b5',
   TEAL: '#3f51b5',
+
+  MOON: '../asset/image/1.jpg',
+  COLOR: '../asset/image/2.jpg',
 };

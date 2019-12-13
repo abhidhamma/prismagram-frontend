@@ -1,26 +1,78 @@
 import React from 'react';
+import { Helmet } from 'rl-react-helmet';
 import styled from 'styled-components';
-const Feed = styled.div`
-  display: grid;
-  width: 100vw;
-  height: 100vh;
-  align-self: center;
-  justify-self: center;
-  background: ${props => props.theme.INDIGO};
+import { gql } from 'apollo-boost';
+import { useQuery } from 'react-apollo-hooks';
+import Loader from '../Components/Loader';
+import Post from '../Components/Post';
+
+const FEED_QUERY = gql`
+  {
+    seeFeed {
+      id
+      location
+      caption
+      user {
+        id
+        avatar
+        userName
+      }
+      files {
+        id
+        url
+      }
+      likeCount
+      isLiked
+      comments {
+        id
+        text
+        user {
+          id
+          userName
+        }
+      }
+      createdAt
+    }
+  }
 `;
 
-const Text = styled.div`
-  color: white;
-  align-self: center;
-  justify-self: center;
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
 `;
 
-export default () => (
-  <>
-    <Feed>
-      <Text>
-        <h1>로그인성공^-^//</h1>
-      </Text>
-    </Feed>
-  </>
-);
+export default () => {
+  console.log('feed');
+  const { data, loading } = useQuery(FEED_QUERY);
+  console.log(data);
+  return (
+    <Wrapper>
+      <Helmet>
+        <title>Feed | Prismagram</title>
+      </Helmet>
+      {loading && <Loader />}
+      {!loading &&
+        data &&
+        data.seeFeed &&
+        data.seeFeed.map(post => {
+          console.log(post);
+          return (
+            <Post
+              key={post.id}
+              id={post.id}
+              location={post.location}
+              caption={post.caption}
+              user={post.user}
+              files={post.files}
+              likeCount={post.likeCount}
+              isLiked={post.isLiked}
+              comments={post.comments}
+              createdAt={post.createdAt}
+            />
+          );
+        })}
+    </Wrapper>
+  );
+};
